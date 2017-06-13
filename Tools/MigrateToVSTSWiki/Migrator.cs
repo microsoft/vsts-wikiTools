@@ -36,7 +36,7 @@ namespace MigrateToVSTSWiki
             // Initiate migration
             FileHelper.MigrateFiles(source, destination);
 
-            Console.WriteLine("\nPress any key to exit...");
+            Console.WriteLine("\nPress Enter key to exit...");
             Console.ReadLine();
         }
 
