@@ -1,3 +1,4 @@
+
 # Migrate pages from Wiki extension to new VSTS Wiki
 
 ## Migration Summary
@@ -14,10 +15,17 @@ Here are the detailed steps for Wiki migration:
  
 2.	Click on More -> Clone Wiki -> and clone your VSTS Wiki repo using 'git clone' command.
 
+<img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/1%20Clone%20wiki.PNG">
+
 > Let the clone location be "LocationA" with respect to the document. E.g with respect to this document "C:\Users\sancha\WikiDemo.wiki"
+
+<img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/2%20Git%20Clone.PNG">
+
  
 3.	Clone the Wiki extension repo. The Wiki will be mapped to a folder given by you during the wiki creation. You can check that by going to "manage wiki" option in the existing wiki as shown below.
- 
+
+<img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/3%20Wiki%20extension.PNG">
+
 The value under the label "Root" is the folder in your repo inside which the existing wiki pages are saved.
 
 4.	Say you have cloned the above mentioned "sampleWiki" in the location "C:\wiki\sampleWiki". The wiki pages will be saved in the path "C:\wiki\sampleWiki\_extensionWiki". Let this be "LocationB" with respect to the document.
@@ -29,7 +37,7 @@ The value under the label "Root" is the folder in your repo inside which the exi
 - Location B = Wiki extension 
 - Location C = Empty folder where we will run our migration tool'''
 
-6.	Open command prompt in admin mode
+6.	Open command prompt as an administrator
 
 7.	Run the 'MigrateToVSTSWiki.exe' as shown below to copy the files from your existing wiki and copying them to the destination directory provided. During copying, the exe converts the pages to be compliant with VSTS wiki.
  
@@ -38,7 +46,8 @@ The value under the label "Root" is the folder in your repo inside which the exi
 Eg: In the example above:
 - "E:\wiki\sampleWiki\_extensionWiki" is the folder in which the existing wiki files are present.
 -	"E:\Temp\Wiki\New" is the empty folder into which the migrates files will get dropped.
- 
+
+<img src = "https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/4%20Migate%20to%20VSTS%20Exe.PNG">
 
 8. Now remove all files from the path "LocationA" (if any) apart from the git related files such as .gitignore etc.
 
@@ -48,6 +57,8 @@ Eg: In the example above:
   
 11.	Run 'git commit -m <commit message>' to commit the files that you have staged locally.
   
+<img src = "https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/5%20Git%20commit.PNG">  
+
 12.	Run 'git push origin wikiMaster -f' Push the changes on to the master branch of the VSTS Wiki.
 
 ## Source code
