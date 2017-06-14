@@ -16,7 +16,7 @@ Here are the detailed steps for Wiki migration:
 2.	Click on More -> Clone Wiki -> and clone your VSTS Wiki repo using 'git clone' command.
 
 <img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/1%20Clone%20wiki.PNG">
-
+[
 > Let the clone location be "LocationA" with respect to the document. E.g with respect to this document "C:\Users\sancha\WikiDemo.wiki"
 
 <img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/2%20Git%20Clone.PNG">
@@ -27,7 +27,6 @@ Here are the detailed steps for Wiki migration:
 <img src="https://github.com/sandeepchads/vsts-wikiTools/blob/master/Images/3%20Wiki%20extension.PNG">
 
 The value under the label "Root" is the folder in your repo inside which the existing wiki pages are saved.
-
 4.	Say you have cloned the above mentioned "sampleWiki" in the location "C:\wiki\sampleWiki". The wiki pages will be saved in the path "C:\wiki\sampleWiki\_extensionWiki". Let this be "LocationB" with respect to the document.
  
 5.	Create an empty folder in any path of choice in your location machine and let that be "LocationC" with respect to the document.
@@ -64,11 +63,12 @@ Eg: In the example above:
 ## Source code
 Repository for the documentation - https://github.com/Microsoft/vsts-wikiTools
 
-MigrateToVSTSWiki.EXE - <Update the path here>
+MigrateToVSTSWiki.EXE - **Update the path here** 
 
 ## Feedback
 For bugs, questions and discussions please use the [GitHub Issues](https://github.com/Microsoft/vsts-wikiTools/issues).
 
+Want to learn more about the new and exciting features of VSTS Wiki. Visit [this blog post - coming soon](comingsoon) for more details.
 
 ## Contributing
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
