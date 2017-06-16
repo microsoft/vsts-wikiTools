@@ -34,13 +34,13 @@ The value under the label "Root" is the folder in your repo inside which the exi
 > Just to summarize 
 - Location A = VSTS Wiki 
 - Location B = Wiki extension 
-- Location C = Empty folder where we will run our migration tool'''
+- Location C = Empty folder where we will run our migration tool
 
 6.	Open command prompt as an administrator
 
 7.	Run **MigrateToVSTSWiki.exe** as shown below to copy the files from your existing wiki and copying them to the destination directory provided. During copying, the exe converts the pages to be compliant with VSTS wiki.
  
-**Format:** MigrateToVSTSWiki.exe /source:LocationB /destination:LocationC '
+**Format:** MigrateToVSTSWiki.exe /source:LocationB /destination:LocationC
 
 E.g. In the example above:
 - "E:\wiki\sampleWiki\_extensionWiki" is the folder in which the existing wiki files are present.
@@ -63,7 +63,6 @@ E.g. In the example above:
 ## Source code
 Repository for the documentation - https://github.com/Microsoft/vsts-wikiTools
 
-MigrateToVSTSWiki.EXE - **Update the path here** 
 
 ## Feedback
 For bugs, questions and discussions please use the [GitHub Issues](https://github.com/Microsoft/vsts-wikiTools/issues).
