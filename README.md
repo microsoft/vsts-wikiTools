@@ -7,7 +7,7 @@ Names you assign to a Wiki page titles must conform to the following constraints
 | ------------- |-------------|
 | Length      | The fully qualified page path should not exceed 260 characters. |
 | Uniqueness      | Page titles are case sensitive and are unique under its parent. |
-| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages must not contain the blank space.</li></ol>|
+| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages' titles must not contain the blank space.</li></ol>|
 
 ### Create offline pages in Wiki
 1. Clone the Wiki repo.
@@ -19,7 +19,7 @@ Names you assign to a Wiki page titles must conform to the following constraints
 ### .order file
 1. **.order** file holds the sequence in which the pages in a level are ordered.
 2. The order file at each folder controls the order of pages in that folder.
-3. For offline created pages updating the order file with the added pages' titles is mandatory.
+3. For offline created page updating the order file with the added pages' titles is mandatory.
 
 ## Migrate pages from Wiki extension to new VSTS Wiki
 
