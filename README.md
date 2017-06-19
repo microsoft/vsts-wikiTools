@@ -83,7 +83,7 @@ E.g. In the example above:
 12.	Run **git push origin wikiMaster -f** .Push the changes on to the default branch of the VSTS Wiki.
 
 
-### Source code for the migration tools
+### Source code for the wiki tools
 Repository for the documentation - https://github.com/Microsoft/vsts-wikiTools
 
 
