@@ -1,24 +1,23 @@
 ﻿## Wiki guidelines
 
 ### Naming a wiki page
-Names you assign to a Wiki page must conform to the following constraints.
+Names you assign to a Wiki page titles must conform to the following constraints.
 
 |  Constraint type    | Constraint |
 | ------------- |-------------|
-| Length      | There is no specific restriction of length at a single page level, but in the hierarchy, any fully qualified page path should not exceed 260 characters. |
+| Length      | The fully qualified page path should not exceed 260 characters. |
 | Uniqueness      | Page titles are case sensitive and are unique under its parent. |
-| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? | - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages must not contain the blank space.</li></ol>|
+| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages must not contain the blank space.</li></ol>|
 
 ### Create offline pages in Wiki
-Apart from the restrictions places in the above section, for offline page creation the pages 
 1. Clone the Wiki repo.
-2. Create the MD file at the root path.  Example, "Home-Page.md".
-3. Update the **.order** file to add "Home-Page.md" at the correct order. Learn more about .order file in the below section.
+2. Create the markdown file at the root path.  Example, "Home-Page.md".
+3. Update the **.order** file to add "Home-Page.md" at the correct order in the hierarchy. Learn more about .order file in the below section.
 4. To create a page hierarchy with parent and child pages, create a folder with the same name, say "Home-Page", as that of the page you wish to make as parent page. Pages added into this folder will become child pages of "Home-Page".
 5. Push the changes to the remote branch.
 
 ### .order file
-1. .order file holds the sequence in which the pages in a level are ordered.
+1. **.order** file holds the sequence in which the pages in a level are ordered.
 2. The order file at each folder controls the order of pages in that folder.
 3. For offline created pages updating the order file with the added pages' titles is mandatory.
 
@@ -29,7 +28,7 @@ Migration of markdown pages from Wiki extension to VSTS wiki is a simple 4 step 
 1.	Clone the VSTS Wiki 
 2.	Move & commit all markdown pages to VSTS Wiki
 3.	Run the migration tool provided by Microsoft (link)
-4.	Push the changes to the master branch on VSTS Wiki
+4.	Once you are done, push the changes to the default branch on VSTS Wiki repositorys.
 
 ### Detailed steps
 Here are the detailed steps for Wiki migration:
