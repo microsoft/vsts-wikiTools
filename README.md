@@ -1,27 +1,4 @@
-﻿## Wiki guidelines
-
-### Naming a wiki page
-Names you assign to a Wiki page titles must conform to the following constraints.
-
-|  Constraint type    | Constraint |
-| ------------- |-------------|
-| Length      | The fully qualified page path should not exceed 260 characters. |
-| Uniqueness      | Page titles are case sensitive and are unique under its parent. |
-| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages' titles must not contain the blank space.</li></ol>|
-
-### Create offline pages in Wiki
-1. Clone the Wiki repo.
-2. Create the markdown file at the root path.  Example, "Home-Page.md".
-3. Update the **.order** file to add "Home-Page.md" at the correct order in the hierarchy. Learn more about .order file in the below section.
-4. To create a page hierarchy with parent and child pages, create a folder with the same name, say "Home-Page", as that of the page you wish to make as parent page. Pages added into this folder will become child pages of "Home-Page".
-5. Push the changes to the remote branch.
-
-### .order file
-1. **.order** file holds the sequence in which the pages in a level are ordered.
-2. The order file at each folder controls the order of pages in that folder.
-3. For offline created page updating the order file with the added pages' titles is mandatory.
-
-## Migrate pages from Wiki extension to new VSTS Wiki
+﻿## Migrate pages from Wiki extension to new VSTS Wiki
 
 ### Migration Summary
 Migration of markdown pages from Wiki extension to VSTS wiki is a simple 4 step process:
@@ -82,10 +59,31 @@ E.g. In the example above:
 
 12.	Run **git push origin wikiMaster -f** .Push the changes on to the default branch of the VSTS Wiki.
 
-
 ### Source code for the wiki tools
 Repository for the documentation - https://github.com/Microsoft/vsts-wikiTools
 
+## Wiki guidelines
+
+### Naming a wiki page
+Names you assign to a Wiki page titles must conform to the following constraints.
+
+|  Constraint type    | Constraint |
+| ------------- |-------------|
+| Length      | The fully qualified page path should not exceed 260 characters. |
+| Uniqueness      | Page titles are case sensitive and are unique under its parent. |
+| Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages' titles must not contain the blank space.</li></ol>|
+
+### Create offline pages in Wiki
+1. Clone the Wiki repo.
+2. Create the markdown file at the root path.  Example, "Home-Page.md".
+3. Update the **.order** file to add "Home-Page.md" at the correct order in the hierarchy. Learn more about .order file in the below section.
+4. To create a page hierarchy with parent and child pages, create a folder with the same name, say "Home-Page", as that of the page you wish to make as parent page. Pages added into this folder will become child pages of "Home-Page".
+5. Push the changes to the remote branch.
+
+### .order file
+1. **.order** file holds the sequence in which the pages in a level are ordered.
+2. The order file at each folder controls the order of pages in that folder.
+3. For offline created page updating the order file with the added pages' titles is mandatory.
 
 ## Feedback
 For bugs, questions and discussions please use the [GitHub Issues](https://github.com/Microsoft/vsts-wikiTools/issues).
