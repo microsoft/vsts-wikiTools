@@ -97,3 +97,6 @@ Want to learn more about the new and exciting features of VSTS Wiki. Visit [this
 
 ## Contributing
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Note
+Linked work items are currently not supported in new Wiki. We will be enabling capability to link work items to wiki pages soon.
