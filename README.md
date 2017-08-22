@@ -74,7 +74,7 @@ Names you assign to a Wiki page titles must conform to the following constraints
 
 |  Constraint type    | Constraint |
 | ------------- |-------------|
-| Length      | The fully qualified page path should not exceed 260 characters. |
+| Length      | The fully qualified page path should not exceed 235 characters. |
 | Uniqueness      | Page titles are case sensitive and are unique under its parent. |
 | Special characters | <ol><li>Must not contain any Unicode control characters or surrogate characters</li><li>Must not contain the following printable characters:     / : < > \ * ? \| - #</li><li>Must not start or end with a period (.)</li><li>Offline created pages' titles must not contain the blank space.</li></ol>|
 
